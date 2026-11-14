@@ -17,7 +17,7 @@ Le site affiche le catalogue de livres d'une médiathèque. Il n'utilise **aucun
 1. Cloner le dépôt dans le dossier du serveur :
    ```bash
    cd C:\wamp64\www        # XAMPP : C:\xampp\htdocs
-   git clone <URL_DU_DEPOT> mediatheque-mp1
+   git clone https://github.com/ELprospito/mediatheque-mp1.git mediatheque-mp1
    ```
 2. Démarrer WampServer (icône verte) ou Apache dans XAMPP.
 3. Ouvrir <http://localhost/mediatheque-mp1/> dans le navigateur.
