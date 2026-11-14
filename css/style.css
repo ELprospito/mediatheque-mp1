@@ -1,0 +1,63 @@
+:root {
+    --bleu: #1e3a8a;
+    --bleu-clair: #dbeafe;
+    --texte: #1f2937;
+    --fond: #f8fafc;
+    --bordure: #e2e8f0;
+    --vert: #166534;
+    --vert-fond: #dcfce7;
+    --rouge: #991b1b;
+    --rouge-fond: #fee2e2;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--texte);
+    background: var(--fond);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main { flex: 1; padding-top: 1.5rem; padding-bottom: 2rem; }
+.conteneur { max-width: 960px; margin: 0 auto; padding: 0 1rem; }
+
+.site-header { background: var(--bleu); color: #fff; }
+.site-header .conteneur { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+.logo { font-size: 1.3rem; margin: 0.8rem 0; }
+.site-header nav a { color: #fff; text-decoration: none; padding: 0.5rem 0.9rem; border-radius: 6px; }
+.site-header nav a:hover, .site-header nav a.actif { background: rgba(255, 255, 255, 0.2); }
+
+.site-footer { background: #e2e8f0; text-align: center; padding: 0.8rem 0; font-size: 0.9rem; }
+
+.hero { background: var(--bleu-clair); padding: 2rem; border-radius: 10px; text-align: center; }
+.bouton { display: inline-block; background: var(--bleu); color: #fff; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; }
+.bouton:hover { background: #1e40af; }
+
+.stats { display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
+.stat { flex: 1; min-width: 180px; background: #fff; border: 1px solid var(--bordure); border-radius: 10px; padding: 1.2rem; text-align: center; }
+.stat-nombre { display: block; font-size: 2.2rem; font-weight: bold; color: var(--bleu); }
+
+.filtres { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+.filtres a { padding: 0.35rem 0.9rem; border: 1px solid var(--bleu); border-radius: 999px; color: var(--bleu); text-decoration: none; }
+.filtres a:hover, .filtres a.actif { background: var(--bleu); color: #fff; }
+
+.tableau-conteneur { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { padding: 0.65rem 0.8rem; border-bottom: 1px solid var(--bordure); text-align: left; }
+th { background: var(--bleu); color: #fff; }
+tbody tr:hover { background: #f1f5f9; }
+td a { color: var(--bleu); font-weight: 600; }
+
+.badge { padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.85rem; }
+.badge-oui { background: var(--vert-fond); color: var(--vert); }
+.badge-non { background: var(--rouge-fond); color: var(--rouge); }
+
+.message { padding: 0.8rem 1rem; border-radius: 6px; }
+.message.erreur { background: var(--rouge-fond); color: var(--rouge); }
+.message.info { background: var(--bleu-clair); color: var(--bleu); }
+
+.fiche { display: grid; grid-template-columns: 160px 1fr; gap: 0.5rem 1rem; background: #fff; border: 1px solid var(--bordure); border-radius: 10px; padding: 1.2rem; }
+.fiche dt { font-weight: bold; }
+.fiche dd { margin: 0; }
