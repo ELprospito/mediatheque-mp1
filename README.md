@@ -72,4 +72,4 @@ Fonctions utilitaires ajoutées : `e()`, `libelleCategorie()`, `formaterPrix()`,
 
 ## Auteur
 
-ALAGBO Amour Prosper – FILIERE – Licence 2 – IPNET Institute of Technology
+ALAGBO Amour Prosper – IA – Licence 2 – IPNET Institute of Technology
